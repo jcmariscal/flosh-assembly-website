@@ -1,10 +1,10 @@
 # Summary
 
-# Primary Section
-- [mdBook Github Page Creation](Primary%20Directory/mdBook_GithubPages_Creation.md)
+# General
+- [General](general/general.md)
 
-# Secondary Section
-- [Obsidian Markdown Comparison](Secondary%20Directory/Obsidian_Markdown_Comparison.md)
+# Events
+- [Events](events/events.md)
 
-# Tertiary Section
-- [Export-Obsidian.ps1](Tertiary%20Directory/Export-Obsidian.md)
+# About
+- [About](about/about.md)
