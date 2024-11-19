@@ -3,7 +3,7 @@ authors = ["monoidog, mikelovic"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Example mdBook Site"
+title = "CCC FLOSH ASSEMBLY"
 
 [build]
 build-dir = "public"
