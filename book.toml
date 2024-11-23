@@ -10,3 +10,6 @@ build-dir = "public"
 
 [output.html]
 cname="flosh.0x01.win"
+smart-punctuation = false
+git-repository-url = "https://github.com/jcmariscal/flosh-assembly-website"
+edit-url-template = "https://github.com/jcmariscal/flosh-assembly-website/edit/main/{path}"
