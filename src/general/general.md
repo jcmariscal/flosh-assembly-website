@@ -1,5 +1,7 @@
 # Welcome to the Free/Libre and Open Source Hardware Assembly
 
+ ![FLOSH logo](../res/img/logo.png)
+
 The Free/Libre and Open Source Hardware (FLOSH) Assembly is a space to explore, discuss, and understand the principles and impact of FLOSH. This assembly focuses on the tools, processes, and challenges involved in creating and supporting FLOSH projects.
 
 ## What is FLOSH?
