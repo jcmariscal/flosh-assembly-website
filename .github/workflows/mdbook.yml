@@ -1,4 +1,4 @@
-name: Deploy mdBook Github Pages
+name: deploy mdbook github pages
 
 on:
   push:
@@ -16,22 +16,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Copy resources
-        run: |
-          mkdir -p public/res/img
-          cp -r res/img/* public/res/img/
-
-      - name: Setup mdBook
+      - name: setup mdbook
         uses: peaceiris/actions-mdbook@v1
         with:
           mdbook-version: '0.4.21'
 
-      - name: Build
-        run: mdbook build  # outputs to ./book by default
+      # If your book.toml has [build] build-dir = "public", this is fine.
+      # Otherwise, add: run: mdbook build -d public
+      - name: build
+        run: mdbook build
 
-      - name: Deploy
+      # Copy AFTER the build, because mdBook cleans the build dir.
+      - name: copy resources into build output
+        run: |
+          mkdir -p public/res/img
+          cp -r res/img/* public/res/img/ || true
+
+      - name: deploy
         if: ${{ github.ref == 'refs/heads/main' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.github_token }}
           publish_dir: ./public

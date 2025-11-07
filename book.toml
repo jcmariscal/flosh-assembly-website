@@ -3,7 +3,7 @@ authors = ["monoidog, mikelovic"]
 language = "en"
 multilingual = false
 src = "src"
-title = "CCC FLOSH ASSEMBLY"
+title = "FLOSH ASSEMBLY"
 
 [build]
 build-dir = "public"
